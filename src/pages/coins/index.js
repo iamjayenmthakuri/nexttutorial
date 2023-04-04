@@ -3,9 +3,17 @@ import Axios from "axios";
 const CoinsList = ({ coinData }) => {
   console.log(coinData);
   return (
-    <>
-      <div></div>
-    </>
+    <div>
+      {coinData.coins.map((coin) => {
+        return (
+          <div>
+            <h1>{coin.name}</h1>
+            <img src={coin.coin} />
+            <p>{coin.price}</p>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 
