@@ -4,11 +4,11 @@ import styles from "../styles/Navbar.module.css";
 function Navbar() {
   return (
     <>
-      <div className={styles.Navbar}>
+      <div className={styles.navbar}>
         <div className={styles.Link}>
           <Link href="/">Home</Link>
-          <Link href="/about">Profile</Link>
-          <Link href="/profile">About </Link>
+          <Link href="/about">About</Link>
+          <Link href="/profile">Profile </Link>
         </div>
       </div>
     </>
